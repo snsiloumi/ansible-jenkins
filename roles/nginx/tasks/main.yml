@@ -7,9 +7,3 @@
   yum: 
     name: httpd
     state: present
-
-- name: "Desactivation et arret du serveur nginx"
-  systemd:
-    name: nginx
-    state: stopped
-    enabled: no
